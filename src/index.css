@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Video Filters */
+.grayscale { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.brightness { filter: brightness(130%); }
+.contrast { filter: contrast(150%); }
+.blur { filter: blur(2px); }
+.vintage { filter: sepia(50%) contrast(120%) brightness(90%); }
+.cool { filter: hue-rotate(90deg); }
+.warm { filter: hue-rotate(-30deg) saturate(150%); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Slider Customization */
+.react-slider {
+  touch-action: none;
+}
+
+.react-slider__track {
+  transition: background-color 0.2s;
+}
+
+.react-slider__thumb {
+  transition: transform 0.2s;
+}
+
+.react-slider__thumb:hover {
+  transform: scale(1.2);
+}
